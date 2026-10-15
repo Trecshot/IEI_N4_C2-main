@@ -45,5 +45,5 @@ router.register(r'prestamos', PrestamoViewSet, basename='prestamo')
 
 # 4.4 Integra las urls de sus vistas con Django
 urlpatterns = [
-    path('api/', include(router.urls)),  # La ruta base ahora será /api/
+    path('', include(router.urls)),
 ]
