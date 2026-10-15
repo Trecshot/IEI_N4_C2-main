@@ -1,25 +1,11 @@
 from django.contrib import admin
+from .models import (
+    Pais, Region, Provincia, Comuna, Direccion, Biblioteca,
+    Autor, Genero, SubGenero, Editorial, Idioma, Edicion,
+    Libro, Estado, Ubicacion, Inventario, Usuario, Prestamo
+)
 
-from .models import Pais
-from .models import Region
-from .models import Provincia
-from .models import Comuna
-from .models import Direccion
-from .models import Biblioteca
-from .models import Autor
-from .models import Genero
-from .models import SubGenero
-from .models import Editorial
-from .models import Idioma
-from .models import Edicion
-from .models import Libro
-from .models import Estado
-from .models import Ubicacion
-from .models import Inventario
-from .models import Usuario
-from .models import Prestamo
-
-# Register your models here.
+# Registro de modelos en el panel de administración (Cumplimiento Subcriterio 2.2)
 admin.site.register(Pais)
 admin.site.register(Region)
 admin.site.register(Provincia)
