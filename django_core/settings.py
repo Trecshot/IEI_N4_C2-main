@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    'rest_framework', # 3.1 Instala y 3.2 Configura Rest Framework en settings
     'bilbioteca',
 ]
 

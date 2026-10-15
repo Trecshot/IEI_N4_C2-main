@@ -1,50 +1,48 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 
-from .models import Pais
-from .models import Region
-from .models import Provincia
-from .models import Comuna
-from .models import Direccion
-from .models import Biblioteca
-from .models import Autor
-from .models import Genero
-from .models import SubGenero
-from .models import Editorial
-from .models import Idioma
-from .models import Edicion
-from .models import Libro
-from .models import Estado
-from .models import Ubicacion
-from .models import Inventario
-from .models import Usuario
-from .models import Prestamo
+from .models import (
+    Pais,
+    Region,
+    Provincia,
+    Comuna,
+    Direccion,
+    Biblioteca,
+    Autor,
+    Genero,
+    SubGenero,
+    Editorial,
+    Idioma,
+    Edicion,
+    Libro,
+    Estado,
+    Ubicacion,
+    Inventario,
+    Usuario,
+    Prestamo,
+)
 
-from .serializer import PaisSerializer
-from .serializer import RegionSerializer
-from .serializer import ProvinciaSerializer
-from .serializer import ComunaSerializer
-from .serializer import DireccionSerializer
-from .serializer import BibliotecaSerializer
-from .serializer import AutorSerializer
-from .serializer import GeneroSerializer
-from .serializer import SubGeneroSerializer
-from .serializer import EditorialSerializer
-from .serializer import IdiomaSerializer
-from .serializer import EdicionSerializer
-from .serializer import LibroSerializer
-from .serializer import EstadoSerializer
-from .serializer import UbicacionSerializer
-from .serializer import InventarioSerializer
-from .serializer import UsuarioSerializer
-from .serializer import PrestamoSerializer
+from .serializer import (
+    PaisSerializer,
+    RegionSerializer,
+    ProvinciaSerializer,
+    ComunaSerializer,
+    DireccionSerializer,
+    BibliotecaSerializer,
+    AutorSerializer,
+    GeneroSerializer,
+    SubGeneroSerializer,
+    EditorialSerializer,
+    IdiomaSerializer,
+    EdicionSerializer,
+    LibroSerializer,
+    EstadoSerializer,
+    UbicacionSerializer,
+    InventarioSerializer,
+    UsuarioSerializer,
+    PrestamoSerializer,
+)
 
-# Create your views here.
-def inicio(request):
-    return render(request,'inicio.html')
-
-# ModelViewSet genera automáticamente GET (list/retrieve), POST, PUT, PATCH y DELETE
-
+# 4.2 Genera sus ModelViewSet para su modelo de datos completo
 class PaisViewSet(viewsets.ModelViewSet):
     queryset = Pais.objects.all()
     serializer_class = PaisSerializer
