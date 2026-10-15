@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'django_core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Cambiar a postgresql si corresponde
+        'ENGINE': 'django.db.backends.mysql', # Motor modificado para XAMPP
         'NAME': env('DB_NAME'),
         'USER': env('DB_USER'),
         'PASSWORD': env('DB_PASSWORD'),
