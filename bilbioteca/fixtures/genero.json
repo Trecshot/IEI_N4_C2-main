@@ -1,34 +1,46 @@
 [
   {
-    "model": "biblioteca.genero",
+    "model": "bilbioteca.genero",
     "pk": 1,
     "fields": {
       "genero": "Género Narrativo",
-      "descripcion": "Cuenta una historia real o imaginaria protagonizada por personajes en un tiempo y lugar determinados. Siempre hay un narrador que relata los hechos."
+      "descripcion": "Cuenta una historia real o imaginaria protagonizada por personajes en un tiempo y lugar determinados. Siempre hay un narrador que relata los hechos.",
+      "habilitado": true,
+      "created_at": "2026-10-16 00:00:00",
+      "updated_at": "2026-10-16 00:00:00"
     }
   },
   {
-    "model": "biblioteca.genero",
+    "model": "bilbioteca.genero",
     "pk": 2,
     "fields": {
       "genero": "Género Lírico (Poesía)",
-      "descripcion": "Expresa los sentimientos, las emociones y los pensamientos más íntimos del autor. Utiliza el verso, la rima, la musicalidad y figuras retóricas como la metáfora."
+      "descripcion": "Expresa los sentimientos, las emociones y los pensamientos más íntimos del autor. Utiliza el verso, la rima, la musicalidad y figuras retóricas como la metáfora.",
+      "habilitado": true,
+      "created_at": "2026-10-16 00:00:00",
+      "updated_at": "2026-10-16 00:00:00"
     }
   },
   {
-    "model": "biblioteca.genero",
+    "model": "bilbioteca.genero",
     "pk": 3,
     "fields": {
       "genero": "Género Dramático (Teatro)",
-      "descripcion": "Muestra un conflicto o una historia a través del diálogo directo entre los personajes. No tiene un narrador. Está creado principalmente para ser representado en un escenario ante un público."
+      "descripcion": "Muestra un conflicto o una historia a través del diálogo directo entre los personajes. No tiene un narrador. Está creado principalmente para ser representado en un escenario ante un público.",
+      "habilitado": true,
+      "created_at": "2026-10-16 00:00:00",
+      "updated_at": "2026-10-16 00:00:00"
     }
   },
   {
-    "model": "biblioteca.genero",
-    "pk": 3,
+    "model": "bilbioteca.genero",
+    "pk": 4,
     "fields": {
       "genero": "Género Didáctico",
-      "descripcion": "Tiene como objetivo principal instruir, educar, reflexionar o transmitir ideas y conocimientos al lector."
+      "descripcion": "Tiene como objetivo principal instruir, educar, reflexionar o transmitir ideas y conocimientos al lector.",
+      "habilitado": true,
+      "created_at": "2026-10-16 00:00:00",
+      "updated_at": "2026-10-16 00:00:00"
     }
   }
 ]
